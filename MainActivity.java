@@ -12,9 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     int count = 0;
-
-
-
+    TextView v = (TextView) findViewById(R.id.txtView2);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void setText(View v) {
 
-        TextView v = (TextView) v.findViewById(R.id.txtView2);
+
 
         if (count == 0){
             txtView2.setText("Giraffes are more likely to be struck by lightning than humans due to their height.");
